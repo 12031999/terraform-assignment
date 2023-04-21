@@ -3,7 +3,7 @@ module "rgroup" {
   id         = "n4361"
   location   = "East US"
   tags = {
-    Project        = "Automation Project – Assignment 1"
+    Project        = "Automation Project – Assignment 2"
     Name           = "yatin.phullera"
     ExpirationDate = "2023-06-30"
     Environment    = "Lab"
@@ -16,7 +16,7 @@ module "network" {
   resource_group_name = module.rgroup.name
   location           = "East US"
   tags = {
-    Project        = "Automation Project – Assignment 1"
+    Project        = "Automation Project – Assignment 2"
     Name           = "yatin.phullera"
     ExpirationDate = "2023-06-30"
     Environment    = "Lab"
@@ -28,7 +28,7 @@ module "common" {
   resource_group_name = module.rgroup.name
   location           = "East US" 
   tags = {
-    Project        = "Automation Project – Assignment 1"
+    Project        = "Automation Project – Assignment 2"
     Name           = "yatin.phullera"
     ExpirationDate = "2023-06-30"
     Environment    = "Lab"
@@ -45,7 +45,7 @@ module "vmlinux" {
   ssh_private_key                = "C:\\Users\\User\\.ssh\\id_rsa"
   admin_username                 = "yatin"
   tags = {
-    Project        = "Automation Project – Assignment 1"
+    Project        = "Automation Project – Assignment 2"
     Name           = "yatin.phullera"
     ExpirationDate = "2023-06-30"
     Environment    = "Lab"
@@ -59,7 +59,7 @@ module "vmwindows" {
   subnet_id          = module.network.subnet_id
   storage_account_primary_blob_endpoint = module.common.storage_endpoint
   tags = {
-    Project        = "Automation Project – Assignment 1"
+    Project        = "Automation Project – Assignment 2"
     Name           = "yatin.phullera"
     ExpirationDate = "2023-06-30"
     Environment    = "Lab"

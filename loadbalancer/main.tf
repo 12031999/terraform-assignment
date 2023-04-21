@@ -4,6 +4,7 @@ resource "azurerm_public_ip" "pip" {
   resource_group_name = var.resource_group_name
   allocation_method   = "Dynamic"
   sku                 = "Basic"
+  domain_name_label   = "yatin-loadbalancer"
 }
 
 resource "azurerm_lb" "loadbalancer" {
